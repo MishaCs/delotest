@@ -1,0 +1,62 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a:active,
+a:hover,  
+a {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    color: $text-color;
+    background-image: url(../img/bg/delo-nomer-wrap.jpg);
+    font-weight: 400;
+}
+
+.inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+  font-family: Courier-New;
+}

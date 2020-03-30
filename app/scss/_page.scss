@@ -1,0 +1,259 @@
+.page {
+    background-image: url(../img/bg/delo-nomer-bg.jpg);
+}
+
+.content {
+    max-width: 766px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include fronzyfromto(0, 830px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.content__logo {
+    padding-top: 48px;
+    margin-bottom: 24px;
+}
+
+.content__article {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 59px;
+    @include fronzyfromto(0, 800px) {
+        margin-bottom: 40px;
+    }
+}
+
+.article {
+    @include fronzyfromto(0, 800px) {
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.text-about__label {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    @include fronzyfromto(0, 800px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.text-about__label:not(:last-child) {
+    margin-bottom: 11px;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    background-image: url(../img/bg/line.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    color: #231f20;
+    font-weight: 400;
+    line-height: 50px;
+    font-size: 30px;
+    position: relative;
+    top: -13px;
+    padding-left: 15px;
+
+    @include fronzyfromto(0, 800px) {
+        font-size: 14px;
+        line-height: 34px;
+        top: -6px;
+        padding-left: 0;
+    }
+}
+
+.checkbox-about {
+    margin-bottom: 30px;
+}
+
+.checkbox-about__subtitle {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.checkbox-about__description {
+    margin-bottom: 23px;
+
+    @include fronzyfromto(0, 800px) {
+        margin-bottom: 20px;
+    }
+}
+
+.description {
+    color: $color-description;
+    font-size: 15px;
+    line-height: 23px;
+
+    @include fronzyfromto(0, 800px) {
+        font-size: 14px;
+    }
+}
+
+.column-checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-checkbox__text {
+    color: #000000;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+
+    @include fronzyfromto(0, 800px) {
+        font-size: 16px;
+    }
+
+    @include fronzyfromto(0, 500px) {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+}
+
+.column-checkbox__item {
+    @include fronzyfromto(0, 500px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+    }
+}
+
+.column-checkbox__element {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.column-checkbox__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.column-checkbox__text {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 30px;
+}
+
+.column-checkbox__text::before {
+    content: url(../img/bg/check-box.png);
+    height: 18px;
+    width: 19px;
+    border-radius: 6px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.column-checkbox__input:checked+.column-checkbox__text::after {
+    content: '';
+    background-image: url(../img/bg/check.png);
+    width: 21px;
+    height: 27px;
+    position: absolute;
+    left: 2px;
+    bottom: 4px;
+
+    @include fronzyfromto(0, 800px) {
+        bottom: 6px;
+    }
+}
+
+.subtitle {
+    @include label(24px);
+
+    @include fronzyfromto(0, 830px) {
+        font-size: 18px;
+    }
+}
+
+.subtitle--date {
+    @include label(22px);
+
+    @include fronzyfromto(0, 800px) {
+        font-size: 16px;
+    }
+}
+
+.date {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+
+    @include fronzyfromto(0, 800px) {
+        padding-bottom: 30px;
+    }
+}
+
+.date__subtitle {
+    margin-right: 21px;
+    position: relative;
+    top: 6px;
+
+    @include fronzyfromto(0, 800px) {
+        top: -2px;
+    }
+
+}
+
+.input-text--short {
+    max-width: 206px;
+    top: -9px;
+    padding-left: 8px;
+    @include fronzyfromto(0, 800px) {
+        padding-left: 0;
+    }
+}
+
+.js-possession {
+    margin-bottom: 70px;
+}
+
+.js-possession__subtitle {
+    margin-bottom: 15px;
+}
+
+
+.text-label {
+    @include label(22px);
+    margin-right: 19px;
+
+    @include fronzyfromto(0, 800px) {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+.text-about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 58px;
+    @include fronzyfromto(0, 830px) {
+        margin-bottom: 30px;
+    }
+}
+
+.logo {
+    display: block;
+}
