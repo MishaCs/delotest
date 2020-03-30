@@ -49,6 +49,9 @@ body {
     color: $text-color;
     background-image: url(../img/bg/delo-nomer-wrap.jpg);
     font-weight: 400;
+    @include fronzyfromto(0, 980px) {
+      background-image: none;
+  }
 }
 
 .inner {

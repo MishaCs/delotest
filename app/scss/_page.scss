@@ -1,5 +1,8 @@
 .page {
     background-image: url(../img/bg/delo-nomer-bg.jpg);
+    @include fronzyfromto(0, 500px) {
+        background-image: url(../img/bg/delo-nomer-bg-500.jpg);
+    }
 }
 
 .content {
